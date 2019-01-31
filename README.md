@@ -8,7 +8,6 @@ Sadly the project is not yet ready to use for non technical people, it will impr
  - Discuss here about your experience of the project
  - Help people having trouble running it
  - Add guidelines and help for newcomers
- - Share data/models
 
 **If you are a more experienced user** you can help by proposing solutions for a better user-experience. Ideally, the goal is to get to a release that can be used to non technical people.
 
@@ -19,37 +18,29 @@ The project has multiple entry points. You will have to:
  - Gather photos (or use the one provided in the training data provided below)
  - **Extract** faces from your raw photos
  - **Train** a model on your photos (or use the one provided in the training data provided below)
- - **Convert** your sources with the model
+ - **Convert** your sources with the mode
+ 
+ Read the full instructions at https://github.com/deepfakes/faceswap/blob/master/USAGE.md
 
 ### Extract
-From your setup folder, run `python extract.py`. This will take photos from `src` folder and extract faces into `extract` folder.
+Run `python faceswap.py extract -h`.
 
 ### Train
-From your setup folder, run `python train.py`. This will take photos from `data/trump` and `data/cage` folder and train a model that will be saved inside the `models` folder.
+Run `python faceswap.py train -h`.
 
 ### Convert
-From your setup folder, run `python convert_photo.py`. This will take photos from `original` folder and apply new faces into `modified` folder.
+Run `python faceswap.py convert -h`.
 
 Note: there is no conversion for video yet. You can use MJPG to convert video into photos,, process images, and convert images back to video
 
-## Training Data  
-**Whole project with training images and trained model (~300MB):**  
-https://anonfile.com/p7w3m0d5be/face-swap.zip or [click here to download](https://anonfile.com/p7w3m0d5be/face-swap.zip)
+## Setup
 
-## How To setup and run the project
-
-### Setup
-Clone the repo and setup you environment. There is a Dockerfile that should kickstart you. Otherwise you can setup things manually, see in the Dockerfiles for dependencies
+Follow the directions at https://github.com/deepfakes/faceswap/blob/master/INSTALL.md
 
 **Main Requirements:**
-    Python 3
-    Opencv 3
-    Tensorflow 1.3+(?)
-    Keras 2
+    Python 3.6
+    Opencv
+    Tensorflow
+    Keras
 
-You also need a modern GPU with CUDA support for best performance
-
-**Some tips:**
-
-Reuse existing models will train much faster than start from nothing.  
-If there are not enough training data, start with someone looks similar, then switch the data.
+You also need an Nvidia GPU with CUDA support for best performance.  Minimum is 4gb of Vram.
