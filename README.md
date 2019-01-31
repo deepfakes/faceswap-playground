@@ -31,8 +31,6 @@ Run `python faceswap.py train -h`.
 ### Convert
 Run `python faceswap.py convert -h`.
 
-Note: there is no conversion for video yet. You can use MJPG to convert video into photos,, process images, and convert images back to video
-
 ## Setup
 
 Follow the directions at https://github.com/deepfakes/faceswap/blob/master/INSTALL.md
