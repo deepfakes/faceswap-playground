@@ -1,3 +1,6 @@
+## Notice: This Repo is now in Read Only mode. Discussion about Faceswap usage should be redirected to our Forums at https://www.faceswap.dev
+
+
 # faceswap-playground
 
 This repo has been opened for users playing with the project. 
