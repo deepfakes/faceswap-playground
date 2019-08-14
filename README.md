@@ -1,4 +1,4 @@
-## Notice: This Repo is now in Read Only mode. Discussion about Faceswap usage should be redirected to our Forums at https://www.faceswap.dev
+## Notice: This Repo is now in Read Only mode. Information here is likely to be increasingly outdated. Discussion about Faceswap usage should be redirected to our Forums at https://www.faceswap.dev
 
 
 # faceswap-playground
